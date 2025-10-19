@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Troop 146 Social Media / Gallery</title>
+    <title>BSA Troop 146 Hudsonville, MI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -30,9 +30,14 @@
         }
         header h1 {
             margin: 0;
-            font-size: 2.2em;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
         }
         /* --- END OF MODIFIED CSS --- */
+
         nav {
             background-color: #343a40; /* Darker bar */
             padding: 0.7rem 0;
@@ -54,38 +59,33 @@
             padding: 20px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-        h2 {
+        section {
+            margin-bottom: 30px;
+        }
+        section h2 {
             color: #28a745;
             border-bottom: 2px solid #eee;
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
+        .event-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
         }
-        .gallery-item {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-            background-color: #fff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        .event-item:last-child {
+            border-bottom: none;
         }
-        .gallery-item img, .gallery-item video {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0 auto 10px auto;
+        .news-item {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eee;
         }
-        .gallery-item h3 {
-            margin-top: 0;
-            color: #28a745;
-            font-size: 1.1em;
+        .news-item:last-child {
+            border-bottom: none;
         }
-        .gallery-item p {
-            font-size: 0.9em;
-            color: #666;
+        .contact-info p {
+            margin: 5px 0;
         }
         footer {
             text-align: center;
@@ -96,6 +96,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <img src="troop146_logo.png" alt="BSA Troop 146 Logo">
