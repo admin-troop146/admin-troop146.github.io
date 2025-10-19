@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troop 146 Social Media / Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #28a745; /* Scout green */
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        header img {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        nav {
+            background-color: #343a40; /* Darker bar */
+            padding: 0.7rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.7rem 1.2rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #495057;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #28a745;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .gallery-item {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .gallery-item img, .gallery-item video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+        .gallery-item h3 {
+            margin-top: 0;
+            color: #28a745;
+            font-size: 1.1em;
+        }
+        .gallery-item p {
+            font-size: 0.9em;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="troop146_logo.png" alt="BSA Troop 146 Logo">
+        <h1>Troop 146 Social Media / Gallery</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#photos">Photos</a>
+        <a href="#videos">Videos</a>
+    </nav>
+
+    <div class="container">
+        <section id="photos">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="placeholder_campout.jpg" alt="Campout Photo">
+                    <h3>Fall Campout Fun</h3>
+                    <p>Scouts enjoying a crisp fall weekend at Allegan State Game Area, learning knots and fire safety. (October 2023)</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder_service.jpg" alt="Service Project Photo">
+                    <h3>Community Service Day</h3>
+                    <p>Troop members giving back during our annual park clean-up. (September 2023)</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder_hike.jpg" alt="Hiking Photo">
+                    <h3>Adventure Hike</h3>
+                    <p>Exploring the beautiful trails near Grand Haven. (August 2023)</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="your_image_filename.jpg" alt="Description of your image">
+                    <h3>Title of Your Photo</h3>
+                    <p>Short description of the activity or event. (Month Year)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos">
+            <h2>Video Highlights</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="placeholder_fire_building.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Fire Building Skills</h3>
+                    <p>Our scouts demonstrating proper fire-starting techniques during a skills session. (Summer 2023)</p>
+                </div>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="placeholder_flag_ceremony.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Flag Ceremony</h3>
+                    <p>A short clip of our troop conducting a respectful flag ceremony at the start of a meeting. (Spring 2023)</p>
+                </div>
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="your_video_filename.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <h3>Title of Your Video</h3>
+                    <p>Short description of the video content. (Month Year)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 BSA Troop 146 Hudsonville, MI. All rights reserved.</p>
+    </footer>
+</body>
+</html>
